@@ -7,10 +7,6 @@ log_dir = 'log.{}'.format(time.strftime("%Y%m%d-%H%M%S", time.gmtime()))
 config = {
     'Data': {  # data setting
         'relative_path': "data",
-        # 'train_path': "new_train.pkl",
-        # 'valid_path': "new_gold.pkl",
-        # 'train_path': "new_train.xml",
-        # 'valid_path': "new_gold.xml",
         # 'train_path': "sprl2017_train.xml.pkl",
         # 'valid_path': "sprl2017_gold.xml.pkl",
         'train_path': "sprl2017_train.xml",
@@ -25,7 +21,7 @@ config = {
         },
         'compact': 64,
         'graph': {
-            'balance_factor': 1,
+            'balance_factor': 2,
             'label_smoothing': 0.01,
             'focal_gamma': 2,
             'inference_interval': 1,
@@ -39,7 +35,7 @@ config = {
     'Train': {
         'pretrained_files': None,
         'trainer':{
-            'num_epochs': 50,
+            'num_epochs': 20,
             'patience': None,
             'serialization_dir': log_dir
         },
