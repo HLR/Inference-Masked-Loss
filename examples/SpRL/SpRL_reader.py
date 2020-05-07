@@ -17,7 +17,6 @@ import networkx as nx
 from networkx.exception import NetworkXNoPath
 import torch
 import numpy as np
-from featureIndexer import PosTaggerIndexer, LemmaIndexer, DependencyIndexer, HeadwordIndexer, PhrasePosIndexer
 from feature import DataFeature_for_sentence, DataFeature_for_span
 from dictionaries import dictionary
 
