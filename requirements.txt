@@ -13,7 +13,7 @@ flair
 segtok
 bs4
 pycorenlp
-tqdm==4.35.0
+tqdm==4.66.3
 tensorboard
 spacy==2.1.9
 networkx==2.3
